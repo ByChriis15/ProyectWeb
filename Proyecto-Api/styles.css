@@ -181,6 +181,14 @@ ul.nav-links li a:hover{
     font-family: "La Belle Aurore", cursive;
     font-size: 14px;
 }
+
+.Cursive p{
+    width: 400px;
+    margin: 30px 0;
+    color: #19e9d8;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 24px;
+}
 /* contactame button */
 .contact-button{
     margin: 25px 0 15px;
@@ -300,13 +308,13 @@ ul.nav-links li a:hover{
 .logo-animation li{
     position: absolute;
     bottom: -150px;
-    background: #d3720b57;
+    background: #0bb2d37a;
     width: 30px;
     height: 30px; 
-    animation: square 15s infinite;
+    animation: square 5s infinite;
     transition-timing-function: linear;
     -webkit-transition-timing-function: linear;
-    -webkit-animation: square 15s infinite;
+    -webkit-animation: square 5s infinite;
     -o-animation: square 15s infinite;
 }
 .logo-animation li:nth-child(1){
@@ -478,8 +486,8 @@ ul.nav-links li a:hover{
     flex-direction: column-reverse;
 }
 
-/* my skills starts here */
-/* my skills starts here */
+/* Facultades Seccion Skill*/
+
 
 .section-3{
     width: 85%;
@@ -500,7 +508,7 @@ ul.nav-links li a:hover{
 }
 .description h2{
     font-size: 1.5rem;
-    color: #CC6C06;
+    color: #06ccab;
 }
 .description p{
     width: 95%;
@@ -511,15 +519,15 @@ ul.nav-links li a:hover{
 }
 .description span{
     font-family: 'La Belle Aurore', sans-serif;
-    color: #CC6C06;
+    color: #06ccab;
 }
 .acquired-skills img{
     width: 45%;
     height: auto;
     margin: 50px 0;
-    animation: rotate 35s ease-in-out 1s infinite alternate-reverse;
-    -webkit-animation: rotate 35s ease-in-out 1s infinite alternate-reverse;
-    -o-animation: rotate 35s ease-in-out 1s infinite alternate-reverse;
+    animation: rotate 10s ease-in-out 1s infinite alternate-reverse;
+    -webkit-animation: rotate 10s ease-in-out 1s infinite alternate-reverse;
+    -o-animation: rotate 10s ease-in-out 1s infinite alternate-reverse;
 }
 @keyframes rotate {
     0%{
@@ -1077,4 +1085,60 @@ footer{
 
 .copyright{
     color: #1ceadc;
+}
+
+/* facci html */
+
+.Custom{
+    width: 100%;
+    height: 250px;
+    background: #07ccd2;
+    box-shadow: 0px 0px 3px 2px #0cafa7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: border .5s linear;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.Custom a{
+    text-decoration: none;
+    color: #3cece0;
+}
+.Custom h3{
+    font-size: 1.5rem;
+    margin: 0 0 30px;
+}
+.Custom p{
+    font-size: 16px;
+    color: #adabab;
+    margin-bottom: 15px;
+}
+.Custom::before{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #06cc52;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+    
+}
+.Custom:hover::before{
+    width: 100%;
+}
+.Custom:nth-child(2)::before{
+    background: #ffffff;
+}
+.Custom:nth-child(4)::before{
+    background: #FB20FF;
+}
+.Custom:nth-child(6)::before{
+    background: #F49D1A;
+}
+.Custom:nth-child(3)::before{
+    background: #FF1818;
 }

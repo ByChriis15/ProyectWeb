@@ -87,23 +87,3 @@ let typed = new Typed('.auto-typed',{
     loop: true,
  });
 
-
-
-
-
-
-
-
-// javascript functionality for Map
-
-// function initMap(){
-//     const lagos = {lat: 6.5244, lng: 3.3792};
-//     const map = new google.maps.Map(document.querySelector('.map'),{
-//         zoom : 4,
-//         center: lagos,
-//     });
-//     const marker = new google.maps.Marker({
-//         position: lagos,
-//         map: map,
-//     });
-// }
